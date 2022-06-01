@@ -62,7 +62,7 @@ class DestinationPage extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage(imagePath),
-                  fit: BoxFit.cover,
+                  fit: BoxFit.contain,
                   alignment: Alignment.topCenter),
             ),
             child: Column(
@@ -120,11 +120,6 @@ class DestinationPage extends StatelessWidget {
                                 size: 20,
                                 fontWeight: FontWeight.w600,
                               ),
-                              PrimaryText(
-                                  text: '18',
-                                  size: 16,
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.white24),
                             ],
                           ),
                           SizedBox(height: 20),
@@ -136,22 +131,18 @@ class DestinationPage extends StatelessWidget {
                                 hotDestinationCard(
                                     'assets/ormanPark/belgrad_ormani.jpg',
                                     'Belgrad Ormanı',
-                                    '18 Tourist Place',
                                     context),
                                 hotDestinationCard(
                                     'assets/ormanPark/gulhane_parki.jpg',
                                     'Gülhane Parkı',
-                                    '18 Tourist Place',
                                     context),
                                 hotDestinationCard(
                                     'assets/ormanPark/yildiz_parki.jpg',
                                     'Yıldız Parkı',
-                                    '18 Tourist Place',
                                     context),
                                 hotDestinationCard(
                                     'assets/ormanPark/macka_parki.jpg',
                                     'Maçka Parkı',
-                                    '18 Tourist Place',
                                     context),
                               ],
                             ),
@@ -169,8 +160,8 @@ class DestinationPage extends StatelessWidget {
     );
   }
 
-  Widget hotDestinationCard(String imagePath, String placeName,
-      String touristPlaceCount, BuildContext context) {
+  Widget hotDestinationCard(
+      String imagePath, String placeName, BuildContext context) {
     return GestureDetector(
       onTap: () => {
         Navigator.push(

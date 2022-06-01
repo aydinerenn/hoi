@@ -59,7 +59,6 @@ class Home extends StatelessWidget {
                         child: hotDestinationCard(
                             hotDestination[index]['imagePath'],
                             hotDestination[index]['placeName'],
-                            hotDestination[index]['placeCount'],
                             context),
                       )),
             ),
@@ -69,8 +68,8 @@ class Home extends StatelessWidget {
     );
   }
 
-  Widget hotDestinationCard(String imagePath, String placeName,
-      String touristPlaceCount, BuildContext context) {
+  Widget hotDestinationCard(
+      String imagePath, String placeName, BuildContext context) {
     return GestureDetector(
       onTap: () => {
         Navigator.push(
@@ -78,56 +77,54 @@ class Home extends StatelessWidget {
             MaterialPageRoute(
                 builder: (context) => DestinationDetail(imagePath)))
       },
-      child: Stack(children: [
-        Hero(
-          tag: imagePath,
-          child: Container(
-            height: 200,
-            width: 140,
-            margin: EdgeInsets.only(right: 25),
-            padding: EdgeInsets.only(bottom: 20),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(25),
-              image: DecorationImage(
-                image: AssetImage(imagePath),
-                fit: BoxFit.cover,
+      child: Stack(
+        children: [
+          Hero(
+            tag: imagePath,
+            child: Container(
+              height: 200,
+              width: 200,
+              margin: EdgeInsets.only(right: 25),
+              padding: EdgeInsets.only(bottom: 20),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                image: DecorationImage(
+                  image: AssetImage(imagePath),
+                  fit: BoxFit.fill,
+                ),
               ),
             ),
           ),
-        ),
-        Positioned(
-          top: 0,
-          left: 0,
-          child: Container(
-            height: 200,
-            width: 140,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(25),
-              gradient: LinearGradient(
-                  begin: Alignment.bottomCenter,
-                  end: Alignment.topCenter,
-                  colors: [AppColor.secondaryColor, Colors.transparent]),
+          Positioned(
+            top: 0,
+            left: 0,
+            child: Container(
+              height: 200,
+              width: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                gradient: LinearGradient(
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.topCenter,
+                    colors: [AppColor.secondaryColor, Colors.transparent]),
+              ),
             ),
           ),
-        ),
-        Positioned(
-          bottom: 20,
-          left: 20,
-          child: Column(
+          Positioned(
+            bottom: 20,
+            left: 20,
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 PrimaryText(
                     text: placeName, size: 15, fontWeight: FontWeight.w800),
                 SizedBox(height: 4),
-                PrimaryText(
-                    text: touristPlaceCount,
-                    color: Colors.white54,
-                    size: 10,
-                    fontWeight: FontWeight.w800)
-              ]),
-        ),
-      ]),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 
