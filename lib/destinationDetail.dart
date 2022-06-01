@@ -103,7 +103,7 @@ class DestinationPage extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          PrimaryText(text: 'America', size: 24),
+                          PrimaryText(text: 'İstanbul', size: 24),
                           SizedBox(height: 10),
                           PrimaryText(
                               text:
@@ -116,7 +116,7 @@ class DestinationPage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               PrimaryText(
-                                text: 'Tourist Places',
+                                text: 'Gezilebilecek Yerler',
                                 size: 20,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -133,12 +133,26 @@ class DestinationPage extends StatelessWidget {
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
-                                hotDestinationCard('assets/bridge.jpg',
-                                    'AMERICA', '18 Tourist Place', context),
-                                hotDestinationCard('assets/japan-home.jpg',
-                                    'JAPAN', '18 Tourist Place', context),
-                                hotDestinationCard('assets/city.jpg', 'NEWYORK',
-                                    '18 Tourist Place', context),
+                                hotDestinationCard(
+                                    'assets/ormanPark/belgrad_ormani.jpg',
+                                    'Belgrad Ormanı',
+                                    '18 Tourist Place',
+                                    context),
+                                hotDestinationCard(
+                                    'assets/ormanPark/gulhane_parki.jpg',
+                                    'Gülhane Parkı',
+                                    '18 Tourist Place',
+                                    context),
+                                hotDestinationCard(
+                                    'assets/ormanPark/yildiz_parki.jpg',
+                                    'Yıldız Parkı',
+                                    '18 Tourist Place',
+                                    context),
+                                hotDestinationCard(
+                                    'assets/ormanPark/macka_parki.jpg',
+                                    'Maçka Parkı',
+                                    '18 Tourist Place',
+                                    context),
                               ],
                             ),
                           ),
