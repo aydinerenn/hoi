@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:hoi/colors.dart';
 import 'package:hoi/style.dart';
@@ -62,6 +60,7 @@ class DestinationPage extends StatelessWidget {
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
+              color: AppColor.secondaryColor,
               image: DecorationImage(
                   image: AssetImage(imagePath),
                   fit: BoxFit.contain,
