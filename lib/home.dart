@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:travell_app/colors.dart';
-import 'package:travell_app/constant.dart';
-import 'package:travell_app/destinationDetail.dart';
-import 'package:travell_app/style.dart';
+import 'package:hoi/colors.dart';
+import 'package:hoi/constant.dart';
+import 'package:hoi/destinationDetail.dart';
+import 'package:hoi/style.dart';
 
 class Home extends StatelessWidget {
   @override

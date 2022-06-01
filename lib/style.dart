@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:travell_app/colors.dart';
+import 'package:hoi/colors.dart';
+
 class PrimaryText extends StatelessWidget {
   final double size;
   final Color color;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:travell_app/colors.dart';
-import 'package:travell_app/style.dart';
+import 'package:hoi/colors.dart';
+import 'package:hoi/style.dart';
 
 class DestinationDetail extends StatefulWidget {
   final String imagePath;
@@ -62,9 +62,9 @@ class DestinationPage extends StatelessWidget {
                     borderRadius: new BorderRadius.circular(10.0)),
                 color: AppColor.lightSecondary,
                 child: PrimaryText(
-                    text: 'Select location',
-                    size: 20,
-                    )),
+                  text: 'Select location',
+                  size: 20,
+                )),
           ),
           floatingActionButtonLocation:
               FloatingActionButtonLocation.centerFloat,
@@ -128,9 +128,7 @@ class DestinationPage extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              PrimaryText(
-                                  text: 'America',
-                                  size: 24),
+                              PrimaryText(text: 'America', size: 24),
                               SizedBox(height: 10),
                               PrimaryText(
                                   text:
@@ -144,10 +142,10 @@ class DestinationPage extends StatelessWidget {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   PrimaryText(
-                                      text: 'Tourist Places',
-                                      size: 20,
-                                      fontWeight: FontWeight.w600,
-                                      ),
+                                    text: 'Tourist Places',
+                                    size: 20,
+                                    fontWeight: FontWeight.w600,
+                                  ),
                                   PrimaryText(
                                       text: '18',
                                       size: 16,
@@ -228,7 +226,7 @@ class DestinationPage extends StatelessWidget {
 
 class DestinationPageEnterAnimation {
   DestinationPageEnterAnimation(this.controller)
-       : barHeight = Tween<double>(begin: 0, end: 600).animate(
+      : barHeight = Tween<double>(begin: 0, end: 600).animate(
           CurvedAnimation(
             parent: controller,
             curve: Interval(0, 0.5),

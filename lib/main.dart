@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travell_app/home.dart';
+import 'package:hoi/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'History of Istanbul',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.blue,
