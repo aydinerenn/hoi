@@ -109,7 +109,7 @@ class DestinationPage extends StatelessWidget {
                           SizedBox(height: 10),
                           PrimaryText(
                               text:
-                                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.',
+                                  'İstanbul… Şarkılara, şiirlere, romanlara konu olmuş bir kültür ve tarih mozaiği… Dünyada eşi benzeri bulunmayan ve Avrupa ile Asya kıtaları üzerinde tarihi ve kültürel dokusuyla göz kamaştıran camiler, saraylar, parklar ve köşkler şehri İstanbul’u keşfetmek çok heyecanlı ve eğlenceli olacaktır.',
                               size: 15,
                               fontWeight: FontWeight.w500,
                               color: Colors.white38),
