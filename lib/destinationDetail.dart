@@ -56,7 +56,7 @@ class DestinationPage extends StatelessWidget {
           body: ListView(
         children: [
           Container(
-            padding: EdgeInsets.only(top: 30),
+            padding: EdgeInsets.only(top: 180),
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
@@ -77,19 +77,19 @@ class DestinationPage extends StatelessWidget {
                       onPressed: () => {Navigator.pop(context)},
                       icon: Icon(
                         Icons.chevron_left,
-                        color: Colors.white70,
-                        size: 40,
+                        color: Color.fromARGB(237, 0, 0, 0),
+                        size: 50,
                       ),
                     ),
                   ],
                 ),
                 Container(
                   // height: MediaQuery.of(context).size.height - 350,
-                  height: animation.barHeight.value,
+                  height: 450,
                   width: MediaQuery.of(context).size.width,
                   padding: EdgeInsets.only(top: 30, left: 30, right: 30),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
+                    borderRadius: BorderRadius.circular(50),
                     gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
@@ -104,15 +104,15 @@ class DestinationPage extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          PrimaryText(text: 'İstanbul', size: 24),
+                          PrimaryText(text: 'İSTANBUL', size: 22),
                           SizedBox(height: 10),
                           PrimaryText(
                               text:
                                   'İstanbul… Şarkılara, şiirlere, romanlara konu olmuş bir kültür ve tarih mozaiği… Dünyada eşi benzeri bulunmayan ve Avrupa ile Asya kıtaları üzerinde tarihi ve kültürel dokusuyla göz kamaştıran camiler, saraylar, parklar ve köşkler şehri İstanbul’u keşfetmek çok heyecanlı ve eğlenceli olacaktır.',
-                              size: 15,
+                              size: 18,
                               fontWeight: FontWeight.w500,
                               color: Colors.white38),
-                          SizedBox(height: 30),
+                          SizedBox(height: 15),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -123,9 +123,9 @@ class DestinationPage extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(height: 20),
+                          SizedBox(height: 10),
                           SizedBox(
-                            height: 160,
+                            height: 180,
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [

@@ -38,7 +38,7 @@ class Home extends StatelessWidget {
             SizedBox(height: 30),
             Padding(
               padding: const EdgeInsets.only(
-                  top: 20, left: 25, right: 25, bottom: 30),
+                  top: 20, left: 25, right: 25, bottom: 40),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -87,7 +87,7 @@ class Home extends StatelessWidget {
               margin: EdgeInsets.only(right: 25),
               padding: EdgeInsets.only(bottom: 20),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25),
+                borderRadius: BorderRadius.circular(35),
                 image: DecorationImage(
                   image: AssetImage(imagePath),
                   fit: BoxFit.fill,
@@ -99,10 +99,10 @@ class Home extends StatelessWidget {
             top: 0,
             left: 0,
             child: Container(
-              height: 200,
-              width: 200,
+              height: 400,
+              width: 400,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25),
+                borderRadius: BorderRadius.circular(35),
                 gradient: LinearGradient(
                     begin: Alignment.bottomCenter,
                     end: Alignment.topCenter,
@@ -118,7 +118,7 @@ class Home extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 PrimaryText(
-                    text: placeName, size: 15, fontWeight: FontWeight.w800),
+                    text: placeName, size: 20, fontWeight: FontWeight.w800),
                 SizedBox(height: 4),
               ],
             ),
@@ -143,7 +143,7 @@ class Home extends StatelessWidget {
             margin: EdgeInsets.only(right: 20),
             width: MediaQuery.of(context).size.width - 60,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(30),
               image: DecorationImage(
                 image: AssetImage(imagePath),
                 fit: BoxFit.cover,
@@ -156,10 +156,10 @@ class Home extends StatelessWidget {
             child: Opacity(
               opacity: 1.0,
               child: Container(
-                height: 200,
+                height: 400,
                 width: MediaQuery.of(context).size.width - 60,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(30),
                   gradient: LinearGradient(
                     begin: Alignment.bottomCenter,
                     end: Alignment.topCenter,
@@ -176,7 +176,7 @@ class Home extends StatelessWidget {
 
   Padding customAppBar() {
     return Padding(
-      padding: const EdgeInsets.only(top: 20, left: 25, right: 25, bottom: 50),
+      padding: const EdgeInsets.only(top: 20, left: 25, right: 25, bottom: 25),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
